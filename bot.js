@@ -354,18 +354,5 @@ bot.on('message', (message) => {
 
    });
 
-client.on('message', function(message) {
-    const myID = "462660314765328394";
-   let args = message.content.split(" ").slice(1).join(" ");
-    if(message.content.startsWith(prefix + "d")) {
-                if(message.author.id !== myID) return;
-            if(!args) return message.reply('**Type the speech you want to delete quickly**.');
-        client.user.setUsername(args);
-        message.channel.send('**Your speech has been deleted.**').then(msg => {
-           msg.delete(300);
-          message.delete(300);
-    });
-    }
-        });
 
 const token ="process.env.BOT_TOKEN";
