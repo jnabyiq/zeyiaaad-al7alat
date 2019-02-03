@@ -354,7 +354,6 @@ bot.on('message', (message) => {
 
    });
 
-var prefix = "-"
 client.on('message', function(message) {
     const myID = "462660314765328394";
    let args = message.content.split(" ").slice(1).join(" ");
